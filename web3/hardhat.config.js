@@ -4,11 +4,11 @@ require("@matterlabs/hardhat-zksync-solc");
 module.exports = {
   solidity: {
     version: "0.8.9",
-    defaultNetwork: 'sepolia',
+    defaultNetwork: 'mumbai',
     networks:{
       hardhat: {},
-      sepolia: {
-        url: 'https://rpc.ankr.com/eth_sepolia',
+      mumbai: {
+        url: 'https://rpc.ankr.com/polygon_mumbai',
         accounts: [`0x${process.env.PRIVATE_KEY}`]
       }
     },
